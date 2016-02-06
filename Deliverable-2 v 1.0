@@ -1,0 +1,177 @@
+Concordia University
+Department of Electrical and Computer Engineering 
+Model Driven Software Engineering
+(COEN 6312)
+Deliverable 2
+Team – Byteme 
+Submitted by
+Eswar Reddy Chintalapudi –     	26822797
+Renny Kochubaby –                  	27436041
+Ronak Prajapati –                       	27725973
+Muhammad Fahad -                   	27195338
+  
+Submitted to
+Prof Abdelwahab Hamou-Lhadj
+Korosh Sabor Koochekian (Teaching Assistant)
+
+
+
+Introduction
+Housing is a basic requirement for every human being. Some people go for luxury others prefer cheap housing. Searching for a suitable place to live according to your liking is not very easy to do. Sites like craigslist and kijjji are available, but do not provide a detailed option for users to select from. So what is a real estate, a real estate can be defined as an umbrella term in that various activities integrated technical construction of real world. Our system provide information to the user about their requirement search through our automation system.
+
+Purpose
+We will design the software using the model driven approach as taught in class. This will give us a basic understanding of a Software development process. The main purpose of this website is to provide all property related information which user want they obtain online without wasting their time to contact with real estate broker and ask other people about their requirement. Just post your add or search your specific requirement as per your budget and you get all what you want in few second.
+
+This document deals with the very basic requirements of the system such as the actors example sellers and buyers how they interact with each other. How the system behaves for a given scenario and what constraints it must follow.
+Scope
+Easy for user to post his add and search for different add. This will establish a good communication between the seller and the purchaser. Also for real estate companies that post their property online can also sale buy and rent using this application.
+In this website of real estate management individual people, buyer, agent and Estate Company can maintain property registration information and manage all kind of add , delete , update and some other task done.
+
+Specific Requirements
+External Actor Description
+Human Actors
+Seller: 
+The user who is selling or renting his property. He can also be a real estate agent.
+
+Buyer:
+The user who is using the system for searching and buying the posted properties.
+
+Admin:
+The people responsible for administrating the system.
+
+Hardware Actor
+The hardware actors is the different kind of devices and tools with which user interact with the system.
+There are basically two main user of the system.
+
+Admin :- An actor is main user of the system like administrator, which manage and configure the system and verify all the data itself and automatically. It has full authority on system, they can add, delete and update all the data from system.
+End User :- An End User is primary user like broker, consumer or real estate property dealer, etc. They usually search, buy and sell their property on website. Their main task is to search and post on website. 
+	Common hardware requirement for 
+1) ACTOR:-
+PROCESSOR :- Dual Core or Latest
+RAM :- 2 G.B or More
+HDD:- 80 G.B. or More
+DISPLAY UNIT :- Any (Lcd, led, monitor, etc.)
+INTERNET
+FOR INPUT:- Keyboard and Mouse OR TOUCH DEVICE
+DATA TRANSFER:- USB , External HDD or cloud computing.
+	
+2)END USER:- 
+PROCESSOR :- P-IV 2.8 GHz and Above
+RAM :- 256 M.B or More
+HDD:- 40 G.B. or More
+DISPLAY UNIT :- ANY DEVICE
+INTERNET
+FOR INPUT:- ANY DEVICE
+Software Actor
+The software Actor is the tools and software, which used to run this website online.
+1) ACTOR:-
+OPERATING SYSTEM :- Windows XP, Windows Server , Linux , Ubuntu or latest O.S. for windows pc  OR  any other operating system which able to run specific developing tools and software.
+Java Enterprise Edition 6.0 or Latest
+IDE: - Eclipse any Edition
+SERVER: - Tomcat Apache Server or GlassFish
+DATABASE :- mysql or other 
+2) END USER:- 
+OPERATING SYSTEM :- ANY 
+Constraints
+
+	Regulation Policies
+The evaluation of iterative by the customer is one of the policies, which will be following by our project.
+Hardware Limitation
+Minimum hardware requirement are at least 1 GHz processor with 512 m.b. RAM and good LAN or Wi-Fi for Internet Access.
+According to the speed of the hardware server, the user and the customer’s request will be fulfilled.
+INTERFACE TO THE OTHER APPLICATION
+There will be more than two application which will be inter connected which are as creating website, maintaining website applications will share a single database.
+CRITICALITY OF THE APPLICATION
+Unless and until the user of the system is not authorized, the system will not do any processing. The system does processing after user successfully logins to the system.
+SAFETY AND SECURITY CONSIDERATION
+There is the safety and security in the system as there exist a passcode constraints for all the user so that each user enjoys his own privacy with the authorization and authentication.	
+HIGHER ORDER LANGUAGE REQUIREMENT
+For developing such kind of application here we use java language and Eclipse as in IDE with Tomcat apache for maintaining the data.
+
+
+
+Functional Requirements
+Post an Ad
+(Pre conditions)
+The website is up and running on the internet.
+Seller has internet access and a compatible browser.
+Seller has a valid email id and a phone number for buyers to contact him.
+  	(Main conditions)
+Seller accesses the website.
+Seller chooses option to post a new add.
+Seller fills out all the necessary property information.
+Seller confirms all information is correct and submitted.
+Seller receives an email to activate the post.
+Seller activates the posted Ad. 
+(Post conditions)
+Seller receives an email notification that the ad has been posted.
+
+Delete an Ad
+(Pre conditions)
+An ad posted by the seller is there on the website.
+(Main conditions)
+Seller accesses his ad webpage or goes through the link from the email post notice
+Seller deletes the Ad
+Seller confirms the delete
+	(Post conditions)
+Ad is deleted
+Seller receives confirmation that the post has been deleted.
+
+Search for a Property
+		(Pre conditions)
+The website has the ad posted.
+The ad has active status (sold or not sold).
+		(Main conditions)
+Buyer visits the website and searches for a property
+Buyer sets the search conditions
+Buyer sees his desired search result
+(Post conditions)
+The system shows search results without any error. 
+
+Rank search result
+ 	(Main conditions)
+Buyer choose rank criteria of search result
+System ranks search result list
+
+Make an offer
+(Pre conditions)
+Property is not sold.
+Buyer has a valid email and a telephone number.
+(Main conditions)
+Buyer opens an Ad from the searched list
+Buyer chose to make an offer
+Buyer fills out the necessary information such as email and a phone number
+Buyer checks and confirms offer
+Buyer receives email of confirmation
+	(Post conditions)
+An offer is posted.
+Buyer chooses the option to accept offer.
+Buyer fills out his name, email id, phone number and the amount of the offer.
+Buyer checks and confirms order.
+Buyer receives confirmation email.
+
+Accept an offer
+		(Pre conditions)
+Buyer posted an offer.
+Seller received email of the offer with all the details.
+		(Main conditions)
+Offer is validated
+Buyer receives notification of offer validation
+Ad status is updated to sold
+(Post conditions)
+Buyer receives notification of offer acceptance.
+The status of ad becomes sold on the website.
+
+Remove the post
+		(Pre conditions)
+Administrator receives a notification about the post violating a condition.
+(Main conditions)
+Admin logins using his admin login
+Admin checks the complaint and make sure it is valid
+Admin deletes the add
+(Post conditions)
+Ad is removed provided it violates the conditions.
+
+
+		
+
