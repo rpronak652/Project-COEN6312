@@ -1,0 +1,381 @@
+ 
+
+Department of Electrical and Computer Engineering 
+Model Driven Software Engineering
+(COEN 6312)
+Deliverable 2
+Team – Byteme 
+Submitted by
+Ronak Prajapati –                       	27725973
+Eswar Reddy Chintalapudi –     	26822797
+Renny Kochubaby –                  	27436041
+Muhammad Fahad –                  	27195338
+  
+Submitted to
+Prof Abdelwahab Hamou-Lhadj
+Korosh Sabor Koochekian (Teaching Assistant)
+
+INDEX									PAGE NO
+
+1.	INTRODUCTION									4
+2.	PURPOSE										4
+3.	SCOPE										4
+4.	SPECIFIC REQUIREMENT								4
+5.	FUNCTIONAL REQUIREMENT							6
+6.	NON-FUNCTIONAL REQUIREMENT						7
+7.	REFERENCES									17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TABLES
+Table Name	Page No
+Table 1.   Post an Add	11
+Table 2.   Search for a Property	12
+Table 3.  Make an Offer	14
+Table 4.  Accept an Offer	15
+Table 5.  Update the Post	17
+
+DIAGRAMS
+
+Fig 1.0 – Use case dig. For Real estate system	9
+Fig 2.0 – Use case dig. For Post an Add	10
+Fig 3.0 – Use case dig. For Search for a Property	11
+Fig 4.0 – Use case dig. For Make an Offer	13
+Fig 5.0 – Use case dig. For Accept an Offer	14
+Fig 6.0 – Use case dig. For Update the Post	16
+ 
+Introduction
+
+Housing is a basic requirement for every human being. Some people go for luxury others prefer cheap housing. Searching for a suitable place to live according to your liking is not very easy to do. Sites like craigslist and Kijjji are available, but do not provide a detailed option for users to select from. So what is a real estate, a real estate can be defined as an umbrella term in that various activities integrated technical construction of real world. Our system provides information to the users about their requirement search through our automation system.
+
+Purpose
+
+We will design the software using the model driven approach as taught in class. This will give us a basic understanding of a Software development process. The main purpose of this website is to provide all property related information which user want they obtain online without wasting their time to contact with real estate broker and ask other people about their requirement. Just post your add or search your specific requirement as per your budget and you get all what you want in few second.
+
+This document deals with the very basic requirements of the system such as the actors example sellers and buyers how they interact with each other. How the system behaves for a given scenario and what constraints it must follow.
+Scope
+
+Easy for user to post his add and search for different add. This will establish a good communication between the seller and the purchaser. Also for real estate companies that post their property online can also sale buy and rent using this application.
+In this website of real estate management individual people, buyer, agent and Estate Company can maintain property registration information and manage all kind of add , delete , update and some other task done.
+
+Specific Requirements
+
+External Actor Description
+Human Actors
+Seller: 
+The user who is selling or renting his property. He can also be a real estate agent.
+
+Buyer:
+The user who is using the system for searching and buying the posted properties.
+
+Admin:
+The people responsible for administrating the system.
+
+Hardware Actor
+The hardware actors is the different kind of devices and tools with which user interact with the system.
+There are basically two main user of the system.
+
+1)	Admin :- An actor is main user of the system like administrator, which manage and configure the system and verify all the data itself and automatically. It has full authority on system, they can add, delete and update all the data from system.
+2)	End User :- An End User is primary user like broker, consumer or real estate property dealer, etc. They usually search, buy and sell their property on website. Their main task is to search and post on website. 
+
+	Common hardware requirement for 
+1) ACTOR:-
+●	PROCESSOR :- Dual Core or Latest
+●	RAM :- 2 G.B or More
+●	HDD:- 80 G.B. or More
+●	DISPLAY UNIT :- Any (Lcd, led, monitor, etc.)
+●	INTERNET
+●	FOR INPUT:- Keyboard and Mouse OR TOUCH DEVICE
+●	DATA TRANSFER:- USB , External HDD or cloud computing.
+2)END USER:- 
+●	PROCESSOR :- P-IV 2.8 GHz and Above
+●	RAM :- 256 M.B or More
+●	HDD:- 40 G.B. or More
+●	DISPLAY UNIT :- ANY DEVICE
+●	INTERNET
+●	FOR INPUT:- ANY DEVICE
+Software Actor
+The software Actor is the tools and software, which used to run this website online.
+1) ACTOR:-
+●	OPERATING SYSTEM: - Windows XP, Windows Server , Linux , Ubuntu or latest O.S. for windows pc  OR  any other operating system which able to run specific developing tools and software.
+●	Java Enterprise Edition 6.0 or Latest
+●	Eclipse any Edition
+●	Tomcat Apache Server or GlassFish
+●	DATABASE :- mysql or other 
+2) END USER:- 
+●	OPERATING SYSTEM :- ANY 	
+
+
+FUNCTIONAL REQUIREMENTS
+
+➢	Post an Ad
+
+○	The website is up and running on the internet.
+○	Seller has internet access and a compatible browser.
+○	Seller has a valid email id and a phone number for buyers to contact him.
+○	Seller accesses the website.
+○	Seller chooses option to post a new add.
+○	Seller fills out all the necessary property information.
+○	Seller confirms all information is correct and submitted.
+○	Seller receives an email to activate the post.
+○	Seller activates the posted Ad. 
+○	Seller receives an email notification that the ad has been posted.
+
+
+➢	Delete an Ad
+
+○	An ad posted by the seller is there on the website.
+○	Seller accesses his ad webpage or goes through the link from the email post notice.
+○	Seller deletes the Ad.
+○	Seller confirms the delete.
+○	Ad is deleted
+○	Seller receives confirmation that the post has been deleted.
+
+➢	Search for a Property
+	
+a.	Buyer visits the website and searches for a property.
+b.	Buyer sets the search conditions.
+c.	Buyer sees his desired search result.
+d.	The website has the ad posted.
+e.	The ad has active status (sold or not sold).
+f.	The system shows search results without any error.
+○	Buyer choose rank criteria of search result.
+○	System ranks search result list.
+
+➢	Make an offer
+
+○	Property is not sold.
+○	Buyer has a valid email and a telephone number.
+○	Buyer opens an Ad from the searched list.
+○	Buyer chose to make an offer.
+○	Buyer fills out the necessary information such as email and a phone number.
+○	Buyer checks and confirms offer.
+○	Buyer receives email of confirmation.
+○	An offer is posted.
+○	Buyer chooses the option to accept offer.
+○	Buyer fills out his name, email id, phone number and the amount of the offer.
+○	Buyer checks and confirms order.
+○	Buyer receives confirmation email.
+
+➢	Accept an offer
+	
+○	Buyer posted an offer.
+○	Seller received email of the offer with all the details.
+○	Offer is validated.
+○	Buyer receives notification of offer validation.
+○	Ad status is updated to sold.
+○	Buyer receives notification of offer acceptance.
+○	The status of ad becomes sold on the website.
+
+➢	Remove the post
+
+●	Administrator receives a notification about the post violating a condition.
+●	Admin logins using his admin login.
+●	Admin checks the complaint and make sure it is valid.
+●	Admin deletes the add.
+●	Ad is removed provided it violates the conditions.
+●	Administrator receives a notification about the post violating a condition.
+●	Admin logins using his admin login.
+●	Admin checks the complaint and make sure it is valid.
+●	Admin deletes the add.
+●	Ad is removed provided it violates the conditions.
+
+NON FUNCTIONAL REQUIREMENTS
+USABILITY
+As simple and graphically helpful the system is made the more user this system will attract. It is important that the user should be able to add his ads with ease and search and view results according to his search criteria. Keeping in mind the different environment this application will be opened on it should be designed accordingly. 
+PERFORMANCE
+When surfing the net people usually are keen on staying on sites that are smooth and responsive. People tend to leave sites that don’t respond timely. So the tasks in the software that are more time consuming than the others should be identified. These tasks should be constrained and tweaked as much possible so they don’t lag the overall response time of the software.
+HARDWARE LIMITATION & EFFICIENCY
+Minimum hardware requirement of 1 GHz processor with 512 MB RAM and good LAN or Wi-Fi for Internet Access is recommended for better search results and performance.
+According to the speed of the hardware server, the user and the customer’s request will be fulfilled.
+ROBUSTNESS
+The system must be efficient enough to deal with errors that may occur and handle them without any failure. System should be tolerant to invalid data and unusual operating environments. We put the software to different fault condition that may likely happen in real time environment and make sure that the system behaves accordingly without and crashes.
+FLEXIBILITY
+The design from the start will be done keeping in mind that if needed we can add additional features to the software.  This is important for future enhancements of the software. 
+REGULATION POLICIES
+The evaluation of iterative by the customer is one of the policies, which will be following by our project.
+INTERFACE TO THE OTHER APPLICATION
+There will be more than two application which will be inter connected which are as creating website, maintaining website applications will share a single database.
+CRITICALITY OF THE APPLICATION
+Unless and until the user of the system is not authorized, the system will not do any processing. The system does processing after user successfully logins to the system.
+SAFETY AND SECURITY CONSIDERATION
+There is the safety and security in the system as there exist a passcode constraints for all the user so that each user enjoys his own privacy with the authorization and authentication.	
+It is important that some data should not also be edited by the system admin. This type of data should not be accessible freely to any. Such as specific information given by seller of his property. This data should be protected from being edited at all. 
+HIGHER ORDER LANGUAGE REQUIREMENT
+For developing such kind of application here we use java language and Eclipse as in IDE with Tomcat apache for maintaining the data.
+USE Case Diagram For Real Estate System
+ 
+Fig. 1.
+
+USE Case Description
+
+1.	Post an ad
+ 
+Fig. 2.
+USE CASE ID	UCID -1
+USE Case Name	Post an ad
+Priority	Medium
+Description	Seller accesses the website and posts an ad about the real estate he wants to sell and gets confirmation.
+ 
+Pre conditions	1.	The website is up and running on the internet.
+2.	 Seller has internet access and a compatible browser.
+3.	 Seller has a valid email id and a phone number for buyers to contact him.
+The Main condition
+(The Normal flow)	1.	Seller accesses the website.
+2.	Seller chooses option to post a new add.
+3.	Seller fills out all the necessary property information.
+4.	Seller confirms all information is correct and submitted.
+5.	Seller activates the posted Ad. 
+Post Conditions	1.       Seller receives a notification that the ad has been posted.
+Exceptions	1.	Seller is unable to access the site 
+2.	Seller is unable to give the prerequisite information
+3.	Seller does not receive confirmation by email
+
+Table 1.
+2.	Search for a Property
+ 
+Fig. 3.
+
+USE CASE ID	UCID -2
+USE Case Name	Search for a Property.
+ 
+Description	 
+The buyer searches the website for the type of real estate he/she wants with desired characteristics.
+Priority	 High
+Pre Conditions	1.	System has ads posted
+2.	Properties are available (not yet sold)
+
+The Main condition
+(The Normal flow)	
+1.	Buyer visits the website and searches for a property.
+2.	Buyer sets the search conditions.
+3.	Buyer sees his desired search result.
+ 
+Post Conditions	 
+1.	The system shows search results without any error.
+Exceptions	1.	Site fails to load results
+2.	System generates error because search criteria left blank by user
+
+Table 2.
+
+
+
+
+
+
+
+
+3. Make an offer
+ 
+Fig. 4.
+USE CASE ID	UCID – 3
+USE Case Name	Make an offer.
+ 
+Description	
+Buyer likes the real estate online and chooses to make an offer. He fills the necessary forms online with his credentials.
+Priority	High
+ 
+Pre conditions	 
+1.	Property is not sold.
+2.	Buyer has a valid email and a telephone number.
+ 
+The Main condition
+(The Normal flow)	 
+1.	Buyer opens the post from the searched list.
+2.	Buyer chose to make an offer.
+3.	Buyer fills out the necessary information such as email and a phone number.
+4.	Buyer checks and confirms offer.
+5.	 Buyer receives notification of confirmation.
+ 
+Post Conditions	1.	An offer is posted.
+2.	Buyer chooses the option to accept offer.
+3.	Buyer fills out his name, email id, phone number and the amount of the offer.
+4.	Buyer checks and confirms order.
+Exception	1.	System does not allow offer acception due to property already sold
+2.	Buyer types wrong email and is prompted to retype
+3.	Buyer does not receives notification by email
+Table 3.
+4. Accept an offer
+ 
+Fig. 5.
+
+USE CASE ID	UCID – 4
+USE Case Name	Accept an offer
+ 
+Description	 
+The buyer receives the request and validates the offer. The buyer receives the notification of offer validation.
+Priority	High
+ 
+Pre conditions	 
+1.	 Buyer posted an offer.
+2.	Seller receives a notification  of the offer with all the details.
+ 
+The Main condition
+(The Normal flow)	 
+1.	Offer is validated.
+2.	Buyer receives notification of offer validation.
+3.	Ad status is updated to sold.
+ 
+Post Conditions	 
+1.	Buyer receives notification of offer acceptance.
+2.	The status of ad becomes sold on the website.
+Exception	1.	The seller  accepts or rejects an offer which has expired( expires in 3 days) . System shows error
+2.	The seller rejects offer in which case the buyer receives email of rejection
+
+Table 4.
+
+
+
+
+
+
+5.  Update the post
+ 
+Fig. 6.
+
+USE CASE ID	UCID – 5
+USE Case Name	Update the post
+ 
+Description	 
+The administrator updates or removes a post as he/she gets a notification that the post is violating a rule or a protocol.
+Priority	Medium
+ 
+Pre conditions	 
+1.	Administrator receives a notification about the post violating a condition.
+ 
+The Main condition
+(The Normal flow)	 
+1.	 Admin logins using his admin login.
+2.	Admin checks the complaint and make sure it is valid.
+3.	Admin deletes the ad.
+ Post Conditions	1.	 The post is removed provided it violates the conditions.
+2.	The post is updated.
+Exception	1.	Seller tries to access other than his ad
+2.	Admin does not see issue with the ad
+
+Table 5.
+
+References:-
+
+1.	http://www.tutorialspoint.com/uml/uml_use_case_diagram.htm
+2.	https://support.office.com/en-us/article/Create-a-UML-use-case-diagram-92cc948d-fc74-466c-9457-e82d62ee1298
+3.	http://www.usability.gov/how-to-and-tools/methods/use-cases.html
+4.	http://www.slideshare.net/divyeshsarkar/se-final-report
+5.	https://www.realtor.ca/
+
+
+
+
+
